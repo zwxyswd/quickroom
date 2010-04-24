@@ -1,0 +1,195 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 非特定语言(系统默认值) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\QuickRoom.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOGEX 0, 0, 215, 237
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "QuickRoom 0.1 VS快速挤房工具"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "换行挤房",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,54,48,10
+    CONTROL         "挤单个房间（需选中房间）",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,94,54,112,10
+    EDITTEXT        IDC_EDIT_PEOPLE1,85,84,48,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PEOPLE2,150,84,48,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_LEVEL1,85,99,48,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_LEVEL2,150,99,48,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_NAME,85,114,65,12,ES_CENTER | ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PING,85,129,48,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_SLEEP,85,159,48,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_VSVERSION,85,175,48,12,ES_CENTER | ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "给我挤",IDOK,77,215,60,15
+    GROUPBOX        "换行挤房设置",IDC_STATIC,7,73,201,74
+    LTEXT           "最低在线人数：",IDC_STATIC,20,86,57,8
+    LTEXT           "房间等级范围：",IDC_STATIC,20,101,57,8
+    LTEXT           "至",IDC_STATIC,137,102,9,8
+    GROUPBOX        "说明",IDC_STATIC,7,7,201,36
+    LTEXT           "VS极品挤房工具，完全模拟人工操作，不修改VS内存，多种挤房方式，VS升级后仍然可以使用！",IDC_STATIC,16,19,184,20
+    LTEXT           " lynn出品，官方网站 http://www.lynnmh.com",IDC_STATIC_MSG,7,196,201,20
+    LTEXT           "VS版本设置：",IDC_STATIC,28,177,49,8
+    LTEXT           "（如：2.5.3）",IDC_STATIC,139,177,53,8
+    LTEXT           "Ping最高数值：",IDC_STATIC,20,131,57,8
+    LTEXT           "至",IDC_STATIC,138,87,9,8
+    LTEXT           "房间名字包括：",IDC_STATIC,20,116,57,8
+    LTEXT           "挤房间隔时间：",IDC_STATIC,20,161,57,8
+    LTEXT           "秒",IDC_STATIC,138,162,9,8
+    LTEXT           "(不填为任意)",IDC_STATIC,150,115,49,8
+    GROUPBOX        "挤房方式",IDC_STATIC,7,44,201,25
+    GROUPBOX        "共有设置",IDC_STATIC,7,150,201,42
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        VERTGUIDE, 77
+        VERTGUIDE, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 非特定语言(系统默认值) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,4,1
+ PRODUCTVERSION 0,0,4,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "pleee.com lynn出品"
+            VALUE "FileDescription", "VS快速挤房工具"
+            VALUE "FileVersion", "0, 0, 4, 1"
+            VALUE "InternalName", "QuickRoo"
+            VALUE "LegalCopyright", "Copyright (C) 2009 lynn保留所有权利"
+            VALUE "OriginalFilename", "QuickRoo.exe"
+            VALUE "ProductName", "VS快速挤房工具"
+            VALUE "ProductVersion", "0, 0, 4, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
